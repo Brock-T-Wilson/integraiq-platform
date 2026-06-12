@@ -1,0 +1,501 @@
+.documentationPage {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(0, 153, 229, 0.12), transparent 30%),
+    linear-gradient(180deg, #0f172a 0%, #111827 34%, #dbeafe 34%, #e2e8f0 100%);
+}
+
+.documentationHero {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 3.5rem;
+  color: white;
+}
+
+.documentationHero h1 {
+  margin-bottom: 1rem;
+}
+
+.documentationHero p {
+  max-width: 780px;
+  color: #dbeafe;
+  font-size: 1.2rem;
+}
+
+.docEyebrow {
+  color: #7ee787 !important;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.documentationShell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+.docActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.docActions button {
+  background: linear-gradient(135deg, #0099e5, #12c8c2);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 0.85rem 1.15rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.docActions button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
+}
+
+.docSearch {
+  background: white;
+  border-radius: 18px;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(0, 153, 229, 0.15);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.docSearch input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #1e293b;
+}
+
+.docWorkspace {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 0.9fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.docMainPanel,
+.docSidePanel {
+  min-width: 0;
+}
+
+.docMainPanel,
+.docSidePanel,
+.docInfoCard {
+  background: #f8fbff;
+  border: 1px solid rgba(0, 153, 229, 0.15);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.1);
+}
+
+.docMainPanel,
+.docSidePanel {
+  border-radius: 24px;
+  padding: 1.5rem;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.panelHeader h2,
+.docSidePanel h2,
+.docInfoCard h3 {
+  color: #032a75;
+  margin-bottom: 0.75rem;
+}
+
+.panelHeader span {
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.docTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.docTable th {
+  text-align: left;
+  color: #032a75;
+  font-weight: 800;
+  border-bottom: 1px solid rgba(0, 153, 229, 0.18);
+  padding: 0.85rem;
+}
+
+.docTable td {
+  padding: 0.85rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+  color: #334155;
+  font-weight: 500;
+}
+
+.status {
+  display: inline-block;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  font-size: 0.78rem;
+}
+
+.approved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.review {
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.draft {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.activityList {
+  display: grid;
+  gap: 1rem;
+}
+
+.activityItem {
+  border-left: 4px solid #5acd32;
+  background: #eaf6ff;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.activityItem strong {
+  color: #032a75;
+}
+
+.activityItem p {
+  color: #475569;
+  margin-bottom: 0;
+}
+
+
+.docBottomGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.docInfoCard {
+  border-radius: 22px;
+  padding: 1.5rem;
+  border-top: 4px solid #12c8c2;
+}
+
+.docInfoCard p {
+  color: #475569;
+  margin-bottom: 0;
+}
+
+.docMainPanel,
+.docSidePanel,
+.docInfoCard,
+.activityItem {
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.docMainPanel:hover,
+.docSidePanel:hover,
+.docInfoCard:hover,
+.activityItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 55px rgba(15, 23, 42, 0.14);
+}
+
+.docInfoCard:hover {
+  border-top-color: #5acd32;
+}
+
+@media (max-width: 1000px) {
+  .docWorkspace,
+  .docBottomGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .docTable {
+    font-size: 0.9rem;
+  }
+}
+.lifecycleSection {
+  margin-bottom: 1.5rem;
+}
+
+.lifecycleSection h2 {
+  color: #032a75;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.lifecycleFlow {
+  background: #0f172a;
+  border-radius: 24px;
+  padding: 1.5rem;
+
+  border: 1px solid rgba(18, 200, 194, 0.2);
+
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+
+  flex-wrap: wrap;
+}
+
+.lifecycleStep {
+  background: rgba(255, 255, 255, 0.08);
+
+  border-radius: 16px;
+  padding: 1rem;
+  width: 160px;
+  text-align: center;
+
+  border-top: 4px solid #12c8c2;
+
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.lifecycleStep:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.lifecycleStep h3 {
+  color: white;
+}
+
+.lifecycleStep p {
+  color: #dbeafe;
+}
+
+.lifecycleArrow {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #5acd32;
+}
+@media (max-width: 700px) {
+  .documentationHero {
+    padding-top: 3rem;
+  }
+
+  .panelHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .docTable {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+.docCategories {
+  background: #f8fbff;
+  border-radius: 24px;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 153, 229, 0.15);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.categoryCard {
+  background: #eaf6ff;
+  border-radius: 18px;
+  padding: 1.25rem;
+  border-left: 4px solid #12c8c2;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.categoryCard h3 {
+  color: #032a75;
+  margin-bottom: 0.5rem;
+}
+
+.categoryCard p {
+  color: #475569;
+  margin-bottom: 0;
+}
+
+.categoryCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  border-left-color: #5acd32;
+}
+
+@media (max-width: 900px) {
+  .categoryGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.docTableContainer {
+  max-width: 100%;
+  max-height: 420px;
+  overflow-x: auto;
+  overflow-y: auto;
+  border-radius: 16px;
+}
+
+.docTable {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+
+.docTable thead th {
+  position: sticky;
+  top: 0;
+  background: #f8fbff;
+  z-index: 5;
+}
+
+.archived {
+  background: #e2e8f0;
+  color: #475569;
+}
+.docTypes {
+  background: #0f172a;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.15);
+  margin-bottom: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.docTypes h2 {
+  color: #dbeafe;
+  margin-bottom: 1rem;
+}
+
+.docTypesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.docTypesGrid div {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(126, 231, 135, 0.25);
+  border-left: 4px solid #12c8c2;
+  border-radius: 14px;
+  padding: 0.9rem;
+  color: #dbeafe;
+  font-weight: 700;
+  min-width: 0;
+  box-sizing: border-box;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease;
+}
+
+.docTypesGrid div:hover {
+  transform: translateY(-3px);
+  background: rgba(18, 200, 194, 0.12);
+  border-color: rgba(126, 231, 135, 0.45);
+  border-left-color: #5acd32;
+  box-shadow: 0 24px 55px rgba(15, 23, 42, 0.14);
+}
+
+.docWorkspace {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 0.9fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.docMainPanel,
+.docSidePanel {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.docTableContainer {
+  width: 100%;
+  max-width: 100%;
+  max-height: 420px;
+  overflow-x: auto;
+  overflow-y: auto;
+  border-radius: 16px;
+}
+
+.docTable {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+
+.docTable thead th {
+  position: sticky;
+  top: 0;
+  background: #f8fbff;
+  z-index: 5;
+}
+
+.docTable td {
+  font-weight: 500;
+}
+
+.archived {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+@media (max-width: 1000px) {
+  .docWorkspace {
+    grid-template-columns: 1fr;
+  }
+
+  .docTypesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .docTypesGrid {
+    grid-template-columns: 1fr;
+  }
+}

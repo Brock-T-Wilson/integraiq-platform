@@ -1,0 +1,531 @@
+.aiPage {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(90, 205, 50, 0.16), transparent 30%),
+    linear-gradient(180deg, #020617 0%, #0f172a 38%, #111827 100%);
+}
+
+.aiHero {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 3.5rem;
+  color: white;
+}
+
+.aiHero p {
+  max-width: 850px;
+  color: #dbeafe;
+  font-size: 1.2rem;
+}
+
+.aiEyebrow {
+  color: #7ee787 !important;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.aiShell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+.aiIntro,
+.aiTools,
+.aiHumanReview,
+.aiWorkflow {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(126, 231, 135, 0.2);
+  border-radius: 24px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+.aiIntro h2,
+.aiTools h2,
+.aiHumanReview h2,
+.aiWorkflow h2 {
+  color: #7ee787;
+}
+
+.aiIntro p,
+.aiHumanReview p {
+  color: #dbeafe;
+  margin-bottom: 0;
+}
+
+.aiToolGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.aiToolCard {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #12c8c2;
+  border-radius: 18px;
+  padding: 1.25rem;
+}
+
+.aiToolCard h3 {
+  color: white;
+}
+
+.aiToolCard p {
+  color: #cbd5e1;
+  margin-bottom: 0;
+}
+
+.aiHumanReview {
+  border-left: 6px solid #5acd32;
+}
+
+.aiWorkflow h2 {
+  text-align: center;
+}
+
+.aiWorkflowFlow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.aiWorkflowFlow div {
+  background: rgba(255, 255, 255, 0.08);
+  border-top: 4px solid #12c8c2;
+  border-radius: 16px;
+  padding: 1rem;
+  color: #dbeafe;
+  font-weight: 800;
+}
+
+.aiWorkflowFlow span {
+  color: #5acd32;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.aiToolCard,
+.aiIntro,
+.aiTools,
+.aiHumanReview,
+.aiWorkflow {
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.aiToolCard:hover,
+.aiIntro:hover,
+.aiTools:hover,
+.aiHumanReview:hover,
+.aiWorkflow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.35);
+}
+
+.aiToolCard:hover {
+  border-left-color: #5acd32;
+}
+
+@media (max-width: 1000px) {
+  .aiToolGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .aiToolGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.aiSearch,
+.askIntegrAIQ,
+.aiDataSources,
+.aiGovernance {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(126, 231, 135, 0.2);
+  border-radius: 24px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+.aiSearch {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.aiSearch h2,
+.askIntegrAIQ h2,
+.aiDataSources h2,
+.aiGovernance h2 {
+  color: #7ee787;
+}
+
+.aiSearch p {
+  color: #dbeafe;
+  margin-bottom: 0;
+}
+
+.aiSearchBox {
+  background: rgba(18, 200, 194, 0.12);
+  border-left: 4px solid #12c8c2;
+  border-radius: 18px;
+  padding: 1.25rem;
+}
+
+.aiSearchBox span {
+  color: #7ee787;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+}
+
+.aiSearchBox p {
+  color: white;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.askGrid,
+.dataSourceGrid,
+.governanceGrid {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.askGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dataSourceGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.governanceGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.askGrid div,
+.dataSourceGrid div,
+.governanceGrid div {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #12c8c2;
+  border-radius: 14px;
+  padding: 0.9rem;
+  color: #dbeafe;
+  font-weight: 700;
+}
+
+.aiSearch,
+.askIntegrAIQ,
+.aiDataSources,
+.aiGovernance,
+.askGrid div,
+.dataSourceGrid div,
+.governanceGrid div {
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.aiSearch:hover,
+.askIntegrAIQ:hover,
+.aiDataSources:hover,
+.aiGovernance:hover,
+.askGrid div:hover,
+.dataSourceGrid div:hover,
+.governanceGrid div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.35);
+}
+
+.askGrid div:hover,
+.dataSourceGrid div:hover,
+.governanceGrid div:hover {
+  border-left-color: #5acd32;
+}
+
+@media (max-width: 900px) {
+  .aiSearch {
+    grid-template-columns: 1fr;
+  }
+
+  .askGrid,
+  .dataSourceGrid,
+  .governanceGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .askGrid,
+  .dataSourceGrid,
+  .governanceGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.aiAssistantDashboard,
+.aiCameraIntelligence,
+.futureCapabilities {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(126, 231, 135, 0.2);
+  border-radius: 24px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+.aiAssistantDashboard h2,
+.aiCameraIntelligence h2,
+.futureCapabilities h2 {
+  color: #7ee787;
+}
+
+.aiDashboardGrid,
+.cameraGrid,
+.futureGrid {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.aiDashboardGrid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.cameraGrid,
+.futureGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.aiDashboardGrid div,
+.cameraGrid div,
+.futureGrid div {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #12c8c2;
+  border-radius: 14px;
+  padding: 0.9rem;
+  color: #dbeafe;
+  font-weight: 700;
+}
+
+.aiDashboardGrid span {
+  display: block;
+  color: #cbd5e1;
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.aiDashboardGrid h3 {
+  color: #7ee787;
+  font-size: 2rem;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .aiDashboardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cameraGrid,
+  .futureGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .aiDashboardGrid,
+  .cameraGrid,
+  .futureGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.aiSearch {
+  border-top: 5px solid #8b5cf6;
+}
+
+.askIntegrAIQ {
+  border-top: 5px solid #5acd32;
+}
+
+.aiCameraIntelligence {
+  border-top: 5px solid #f97316;
+}
+
+.aiDataSources {
+  border-top: 5px solid #3b82f6;
+}
+
+.aiGovernance {
+  border-top: 5px solid #dc2626;
+}
+
+.futureCapabilities {
+  border-top: 5px solid #eab308;
+}
+.aiSearch h2 {
+  color: #8b5cf6;
+}
+
+.askIntegrAIQ h2 {
+  color: #5acd32;
+}
+
+.aiCameraIntelligence h2 {
+  color: #f97316;
+}
+
+.aiDataSources h2 {
+  color: #3b82f6;
+}
+
+.aiGovernance h2 {
+  color: #dc2626;
+}
+
+.futureCapabilities h2 {
+  color: #eab308;
+}
+/* =========================
+   AI INTEGRATION COLORS
+   ========================= */
+
+.aiSearch {
+  border-top: 5px solid #8b5cf6;
+  background: rgba(139, 92, 246, 0.08);
+}
+
+.aiSearch h2 {
+  color: #8b5cf6;
+}
+
+.askIntegrAIQ {
+  border-top: 5px solid #5acd32;
+  background: rgba(90, 205, 50, 0.08);
+}
+
+.askIntegrAIQ h2 {
+  color: #5acd32;
+}
+
+.aiCameraIntelligence {
+  border-top: 5px solid #f97316;
+  background: rgba(249, 115, 22, 0.08);
+}
+
+.aiCameraIntelligence h2 {
+  color: #f97316;
+}
+
+.aiDataSources {
+  border-top: 5px solid #3b82f6;
+  background: rgba(59, 130, 246, 0.08);
+}
+
+.aiDataSources h2 {
+  color: #3b82f6;
+}
+
+.aiGovernance {
+  border-top: 5px solid #dc2626;
+  background: rgba(220, 38, 38, 0.08);
+}
+
+.aiGovernance h2 {
+  color: #dc2626;
+}
+
+.futureCapabilities {
+  border-top: 5px solid #eab308;
+  background: rgba(234, 179, 8, 0.08);
+}
+
+.futureCapabilities h2 {
+  color: #eab308;
+}
+
+/* Keep these sections as core platform styling */
+
+.aiIntro,
+.aiTools,
+.aiHumanReview,
+.aiWorkflow {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Hover enhancement */
+
+.aiSearch:hover,
+.askIntegrAIQ:hover,
+.aiCameraIntelligence:hover,
+.aiDataSources:hover,
+.aiGovernance:hover,
+.futureCapabilities:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.35);
+}
+/* AI Integration visual balance */
+
+.aiSearch {
+  border-top: 5px solid #12c8c2;
+  background: rgba(18, 200, 194, 0.09);
+}
+
+.askIntegrAIQ {
+  border-top: 5px solid #5acd32;
+  background: rgba(90, 205, 50, 0.08);
+}
+
+.aiAssistantDashboard {
+  border-top: 5px solid #0099e5;
+  background: rgba(0, 153, 229, 0.09);
+}
+
+.aiCameraIntelligence {
+  border-top: 5px solid #12c8c2;
+  background: rgba(18, 200, 194, 0.08);
+}
+
+.futureCapabilities {
+  border-top: 5px solid #7ee787;
+  background: rgba(126, 231, 135, 0.07);
+}
+
+.aiDataSources {
+  border-top: 5px solid #0099e5;
+  background: rgba(0, 153, 229, 0.08);
+}
+
+.aiGovernance {
+  border-top: 5px solid #5acd32;
+  background: rgba(90, 205, 50, 0.06);
+}
+
+.aiSearch h2,
+.aiCameraIntelligence h2 {
+  color: #12c8c2;
+}
+
+.askIntegrAIQ h2,
+.futureCapabilities h2,
+.aiGovernance h2 {
+  color: #7ee787;
+}
+
+.aiAssistantDashboard h2,
+.aiDataSources h2 {
+  color: #60a5fa;
+}

@@ -1,0 +1,416 @@
+.safetyPage {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(90, 205, 50, 0.12), transparent 30%),
+    linear-gradient(180deg, #0f172a 0%, #111827 32%, #dbeafe 32%, #e2e8f0 100%);
+}
+
+.safetyHero {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 3.5rem;
+  color: white;
+}
+
+.safetyHero p {
+  max-width: 800px;
+  color: #dbeafe;
+  font-size: 1.2rem;
+}
+
+.safetyEyebrow {
+  color: #7ee787 !important;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.safetyShell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+.safetyActivity {
+  background: #0f172a;
+  border-radius: 24px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.15);
+}
+
+.safetyActivity h2 {
+  color: #dbeafe;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.safetyActivityGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.safetyCard {
+  background: white;
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  border-top: 6px solid;
+}
+
+.safetyCard span {
+  color: #64748b;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.safetyCard h3 {
+  color: #020617;
+  margin: 0.4rem 0;
+  font-weight: 800;
+}
+
+.safetyCard p {
+  color: #1e293b;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.safetyMeta {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.red {
+  border-color: #dc2626;
+}
+
+.orange {
+  border-color: #f97316;
+}
+
+.yellow {
+  border-color: #eab308;
+}
+
+.green {
+  border-color: #22c55e;
+}
+
+.safetyIntake,
+.safetyMetrics,
+.safetyPanel,
+.safetyWorkflow {
+  background: #f8fbff;
+  border: 1px solid rgba(0, 153, 229, 0.15);
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.safetyIntake {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.safetyIntake h2,
+.safetyMetrics h2,
+.safetyPanel h2,
+.safetyWorkflow h2 {
+  color: #032a75;
+}
+
+.safetyIntake p {
+  color: #475569;
+  margin-bottom: 0;
+}
+
+.safetyIntakeGrid,
+.safetyCategoryGrid,
+.safetyConnectedList {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.safetyIntakeGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.safetyIntakeItem,
+.safetyConnectedList div {
+  background: #eaf6ff;
+  border-left: 4px solid #12c8c2;
+  border-radius: 14px;
+  padding: 0.9rem;
+  color: #334155;
+  font-weight: 700;
+}
+
+.safetyActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.safetyActions button {
+  background: linear-gradient(135deg, #0099e5, #12c8c2);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 0.85rem 1.15rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.safetyMetricsGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.safetyMetricCard {
+  background: #eaf6ff;
+  border-radius: 18px;
+  padding: 1.25rem;
+  text-align: center;
+  border-top: 4px solid #12c8c2;
+}
+
+.safetyMetricCard span {
+  display: block;
+  color: #475569;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.safetyMetricCard h3 {
+  color: #032a75;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.safetyCategories {
+  background: #0f172a;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.15);
+  margin-bottom: 1.5rem;
+}
+
+.safetyCategories h2 {
+  color: #dbeafe;
+  margin-bottom: 1rem;
+}
+
+.safetyCategoryGrid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.safetyCategoryGrid div {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(126, 231, 135, 0.25);
+  border-left: 4px solid #12c8c2;
+  border-radius: 14px;
+  padding: 0.9rem;
+  color: #dbeafe;
+  font-weight: 700;
+}
+
+.safetyWorkspace {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.safetyTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.safetyTable th {
+  text-align: left;
+  color: #032a75;
+  padding: 0.85rem;
+  border-bottom: 1px solid rgba(0, 153, 229, 0.18);
+}
+
+.safetyTable td {
+  padding: 0.85rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+  color: #334155;
+}
+
+.sStatus {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.redStatus {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.orangeStatus {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.yellowStatus {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.greenStatus {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.safetyWorkflow {
+  background: #0f172a;
+  color: white;
+}
+
+.safetyWorkflow h2 {
+  color: white;
+  text-align: center;
+}
+
+.safetyWorkflowFlow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.safetyWorkflowFlow div {
+  background: rgba(255, 255, 255, 0.08);
+  border-top: 4px solid #12c8c2;
+  border-radius: 16px;
+  padding: 1rem;
+  color: #dbeafe;
+  font-weight: 800;
+}
+
+.safetyWorkflowFlow span {
+  color: #5acd32;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.safetyCard,
+.safetyIntake,
+.safetyMetrics,
+.safetyMetricCard,
+.safetyPanel,
+.safetyCategories,
+.safetyWorkflow,
+.safetyIntakeItem,
+.safetyCategoryGrid div,
+.safetyConnectedList div {
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease;
+}
+
+.safetyCard:hover,
+.safetyIntake:hover,
+.safetyMetrics:hover,
+.safetyMetricCard:hover,
+.safetyPanel:hover,
+.safetyCategories:hover,
+.safetyIntakeItem:hover,
+.safetyCategoryGrid div:hover,
+.safetyConnectedList div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 55px rgba(15, 23, 42, 0.14);
+}
+
+.safetyIntakeItem:hover,
+.safetyConnectedList div:hover {
+  border-left-color: #5acd32;
+}
+
+.safetyCategoryGrid div:hover {
+  background: rgba(18, 200, 194, 0.12);
+  border-color: rgba(126, 231, 135, 0.45);
+  border-left-color: #5acd32;
+}
+
+.safetyMetricCard:hover {
+  border-top-color: #5acd32;
+}
+
+@media (max-width: 1100px) {
+  .safetyActivityGrid,
+  .safetyCategoryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .safetyMetricsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .safetyWorkspace,
+  .safetyIntake {
+    grid-template-columns: 1fr;
+  }
+
+  .safetyIntakeGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .safetyActivityGrid,
+  .safetyCategoryGrid,
+  .safetyIntakeGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .safetyMetricsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .safetyTable {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+.safetyTable {
+  min-width: 900px;
+}
+.safetyTableContainer {
+  max-height: 420px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border-radius: 16px;
+}
+
+.safetyTable {
+  min-width: 900px;
+}
+
+.safetyTable thead th {
+  position: sticky;
+  top: 0;
+  background: #f8fbff;
+  z-index: 5;
+}

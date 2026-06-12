@@ -1,0 +1,199 @@
+.aboutPage {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(18, 200, 194, 0.12), transparent 30%),
+    linear-gradient(180deg, #0f172a 0%, #111827 45%, #dbeafe 45%, #e2e8f0 100%);
+}
+
+.aboutHero {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 4rem;
+  text-align: center;
+  color: white;
+}
+
+.aboutHero h1 {
+  margin-bottom: 1rem;
+}
+
+.aboutHero p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #dbeafe;
+  font-size: 1.25rem;
+}
+
+.aboutContent {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+.aboutGrid,
+.whyGrid,
+.builtForGrid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.aboutGrid {
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2rem;
+}
+
+.whyGrid {
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2rem;
+}
+
+.builtForGrid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.aboutCard,
+.aboutWideCard,
+.whyCard {
+  background: #eaf6ff;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.1);
+}
+
+.aboutCard,
+.whyCard {
+  border-radius: 22px;
+  padding: 2rem;
+}
+
+.aboutCard {
+  border: 1px solid rgba(0, 153, 229, 0.18);
+}
+
+.aboutWideCard {
+  border-radius: 24px;
+  padding: 2.25rem;
+  border-left: 5px solid #5acd32;
+  margin-bottom: 2rem;
+}
+
+.whyCard {
+  border-top: 4px solid #12c8c2;
+  border-left: 1px solid rgba(0, 153, 229, 0.15);
+  border-right: 1px solid rgba(0, 153, 229, 0.15);
+  border-bottom: 1px solid rgba(0, 153, 229, 0.15);
+}
+
+.aboutCard h2,
+.aboutWideCard h2,
+.whyIntegraiq h2,
+.whyCard h3 {
+  color: #032a75;
+}
+
+.aboutCard p,
+.aboutWideCard p,
+.whyCard p {
+  color: #475569;
+}
+
+.whyIntegraiq {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.whyIntegraiq h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.whyStatement {
+  background: #0f172a;
+  border-radius: 24px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.whyStatement h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.whyStatement p {
+  color: #dbeafe;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.builtFor {
+  background: #0f172a;
+  border-radius: 26px;
+  padding: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.builtFor h2 {
+  margin-bottom: 1.5rem;
+}
+
+.builtForCard {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(126, 231, 135, 0.25);
+  border-radius: 18px;
+  padding: 1.5rem;
+}
+
+.builtForCard h3 {
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.builtForCard p {
+  color: #dbeafe;
+  margin-bottom: 0;
+}
+
+.aboutCard,
+.aboutWideCard,
+.whyCard,
+.builtForCard {
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease;
+}
+
+.aboutCard:hover,
+.aboutWideCard:hover,
+.whyCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 55px rgba(15, 23, 42, 0.14);
+}
+
+.aboutCard:hover,
+.aboutWideCard:hover {
+  border-color: rgba(18, 200, 194, 0.35);
+}
+
+.whyCard:hover {
+  border-top-color: #5acd32;
+}
+
+.builtForCard:hover {
+  transform: translateY(-3px);
+  background: rgba(18, 200, 194, 0.12);
+  border-color: rgba(126, 231, 135, 0.45);
+}
+
+@media (max-width: 900px) {
+  .aboutGrid,
+  .whyGrid,
+  .builtForGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutHero {
+    padding-top: 3rem;
+  }
+}

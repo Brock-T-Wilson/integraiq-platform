@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap');
+
+/**
+ * IntegrAIQ Enterprise Theme
+ */
+
+:root {
+  --ifm-color-primary: #0099e5;
+  --ifm-color-primary-dark: #007fc0;
+  --ifm-color-primary-darker: #006ca4;
+  --ifm-color-primary-darkest: #00527d;
+  --ifm-color-primary-light: #1ca8eb;
+  --ifm-color-primary-lighter: #38b5ef;
+  --ifm-color-primary-lightest: #65c8f4;
+
+  --ifm-background-color: #f8fafc;
+  --ifm-font-color-base: #1e293b;
+
+  --ifm-navbar-background-color: #1e293b;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: #65c8f4;
+
+  --ifm-footer-background-color: #f1f5f9;
+}
+
+/* =========================
+   Global Typography
+========================= */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+}
+
+/* Headings match logo style */
+
+h1,
+h2,
+h3,
+h4,
+.navbar__title,
+.hubCenter span {
+  font-family:
+    Rajdhani,
+    Inter,
+    sans-serif;
+
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  font-size: clamp(3rem, 5vw, 4.75rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 1.45rem;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+p {
+  line-height: 1.8;
+}
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar {
+  background: #1e293b !important;
+  border-bottom: 3px solid #0099e5;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.navbar__title {
+  color: white;
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.navbar__link {
+  color: white !important;
+  font-weight: 600;
+}
+
+.navbar__link:hover {
+  color: #65c8f4 !important;
+}
+
+.navbar__logo img {
+  border-radius: 50%;
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+  background: #f1f5f9 !important;
+  border-top: 4px solid #5acd32;
+  color: #1e293b !important;
+}
+
+.footer__title {
+  color: #032a75 !important;
+}
+
+.footer a {
+  color: #1e293b !important;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: #0099e5 !important;
+}
+
+.footer__copyright {
+  color: #475569 !important;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.button--primary {
+  background: linear-gradient(135deg, #0099e5, #12c8c2) !important;
+  border: none;
+  color: white !important;
+  font-weight: 700;
+}
+
+.button--primary:hover {
+  background: linear-gradient(135deg, #007fc0, #0ea5a0) !important;
+}
+
+.button--secondary {
+  color: #65c8f4 !important;
+  border-color: #65c8f4 !important;
+  font-weight: 700;
+}
+
+.button--secondary:hover {
+  background: rgba(101, 200, 244, 0.1);
+  color: white !important;
+}
+
+/* =========================
+   IntegrAIQ Homepage Text
+========================= */
+
+.heroStatement {
+  max-width: 900px;
+  margin: 0 auto 1.25rem;
+  color: #dbeafe;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+.heroModules {
+  font-family:
+    Rajdhani,
+    Inter,
+    sans-serif;
+
+  text-align: center;
+  color: #7ee787;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   Hub / Card Typography
+========================= */
+
+.hubCenter span {
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.moduleCard h3 {
+  font-family:
+    Rajdhani,
+    Inter,
+    sans-serif;
+
+  font-size: 1.45rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.moduleCard p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   General Cards
+========================= */
+
+.card {
+  border-radius: 18px;
+}
+/* ==========================================
+   INTEGRAIQ FOOTER
+========================================== */
+
+.footer {
+  background: #f1f5f9 !important;
+  border-top: 4px solid #5acd32;
+  padding-top: 2rem;
+}
+
+.footer::before {
+  content: '';
+
+  display: block;
+
+  width: 320px;
+  height: 120px;
+
+  margin: 0 auto 1rem;
+
+  background-image: url('/img/integraiq-full-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.footer__copyright {
+  text-align: center;
+  color: #64748b !important;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+.footer::after {
+  content: 'Integrating Intelligence. Empowering Operations.';
+
+  display: block;
+
+  text-align: center;
+
+  font-family: Rajdhani, sans-serif;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  color: #1e293b;
+
+  margin-bottom: 1rem;
+}
+.aiNav {
+  color: #5acd32 !important;
+  font-weight: 800;
+}
+
+.aiNav:hover {
+  color: #7ee787 !important;
+}
