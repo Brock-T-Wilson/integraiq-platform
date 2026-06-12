@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import './integraiq.css';
 
 const modules = [
@@ -38,15 +39,17 @@ const modules = [
 ];
 
 export default function Home() {
+  const logoUrl = useBaseUrl('/img/integraiq-logo.png');
+
   return (
     <Layout title="IntegrAIQ" description="Operational Intelligence Platform">
       <main className="iqPage">
         <section className="logoHero">
           <img
-            className="wideLogo"
-            src="/img/integraiq-logo.png"
-            alt="IntegrAIQ logo"
-          />
+  className="wideLogo"
+  src={logoUrl}
+  alt="IntegrAIQ logo"
+/>
           <p className="heroModules">
   Documentation • Quality • Safety • Training • Alerts • Workforce Knowledge
 </p>

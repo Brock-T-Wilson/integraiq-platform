@@ -18,11 +18,11 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
+  url: 'https://brock-t-wilson.github.io',
+  baseUrl: '/integraiq-platform/',
 
-  organizationName: 'brockwilson19',
-  projectName: 'integraiq',
+  organizationName: 'Brock-T-Wilson',
+  projectName: 'integraiq-platform',
 
   onBrokenLinks: 'warn',
 
